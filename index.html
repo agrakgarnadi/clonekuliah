@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Program Studi Teknologi Pangan — Contoh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green:#2e7d32;
+      --olive:#6b8e23;
+      --muted:#f7f7f7;
+      --accent:#0b63a7;
+      --dark:#222;
+      --container:1100px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0;color:#222;background:#fff}
+    .topbar{background:#2b5a9a;color:#fff;padding:8px 16px;display:flex;align-items:center;justify-content:space-between}
+    .topbar .social{display:flex;gap:8px}
+    .container{max-width:var(--container);margin:0 auto;padding:0 16px}
+    header{background:#fff;border-bottom:1px solid #eee}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:44px}
+    nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
+    nav a{color:#333;text-decoration:none;font-weight:600;font-size:14px}
+    .hero{display:flex;gap:40px;align-items:center;padding:36px 0}
+    .hero-left{flex:1}
+    .eyebrow{color:var(--olive);font-weight:700}
+    h1{font-size:56px;line-height:1.02;margin:6px 0 10px;color:var(--green)}
+    .hero-sub{color:#333;max-width:540px}
+    .hero-right{width:380px;background:linear-gradient(180deg,#fff,#f5f9f3);padding:22px;border-radius:12px;box-shadow:0 8px 24px rgba(30,50,30,0.06)}
+    .specs{font-size:14px;margin:6px 0 0}
+    .specs li{margin:6px 0}
+    .cta{margin-top:18px}
+    .btn{display:inline-block;background:var(--green);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+    .about{padding:28px 0;color:#333}
+    .about h2{text-align:center;margin:6px 0 18px}
+    .about p{max-width:900px;margin:0 auto 12px;line-height:1.6;text-align:justify}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+    .card{background:white;border:1px solid #eee;padding:16px;border-radius:8px;min-height:120px}
+    .center{display:flex;align-items:center;justify-content:center}
+    .section-title{margin:36px 0 18px;text-align:center}
+    .news-list{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .news-item{background:#fff;border-radius:6px;overflow:hidden;border:1px solid #eee}
+    .news-item img{width:100%;height:130px;object-fit:cover;display:block}
+    footer{background:#0f1720;color:#cbd5e1;padding:36px 0;margin-top:36px}
+    .footer-grid{display:flex;gap:40px;flex-wrap:wrap}
+    .footer-grid > div{min-width:200px}
+    .small{font-size:13px;color:#9fb0c8}
+    @media (max-width:1000px){
+      .news-list{grid-template-columns:repeat(2,1fr)}
+      .cards{grid-template-columns:repeat(2,1fr)}
+      .hero{flex-direction:column}
+      h1{font-size:40px}
+      .hero-right{width:100%}
+    }
+    @media (max-width:600px){
+      nav ul{display:none}
+      .brand img{height:36px}
+      h1{font-size:32px}
+      .news-list{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between">
+      <div>Universitas Ma'soem — Kampus Swasta di Bandung</div>
+      <div class="social">📞 +62 22 1234 5678 &nbsp; | &nbsp; info@masoem.ac.id</div>
+    </div>
+  </div>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="gambar1.jpg" alt="Logo Ma'soem University">
+        <div>
+          <div style="font-weight:800">Ma'soem University</div>
+          <div style="font-size:12px;color:#6b7280">Kampus Merdeka</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Fakultas</a></li>
+          <li><a href="#">Informasi</a></li>
+          <li><a href="#">Pendaftaran</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="eyebrow">Program Studi S1</div>
+        <h1>Teknologi<br>Pangan</h1>
+        <p class="hero-sub">Program studi Teknologi Pangan berfokus pada ilmu pengolahan bahan pangan, keamanan pangan, dan inovasi produk. Lulusan siap bekerja di industri makanan, pengolahan pangan, dan penelitian.</p>
+        <div class="cta"><a class="btn" href="#">Daftar Sekarang</a></div>
+      </div>
+      <aside class="hero-right">
+        <img src="gambar2.jpg" alt="Mahasiswa Teknologi Pangan" style="width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:12px">
+        <h3 style="margin:0 0 8px">Spesialisasi</h3>
+        <ul class="specs">
+          <li>Manajemen & Praktik Agribisnis Inovatif</li>
+          <li>Pengembangan Produk Pangan</li>
+          <li>Keamanan & Mutu Pangan</li>
+          <li>Penelitian & Konsultasi Agribisnis</li>
+        </ul>
+      </aside>
+    </section>
+    <section class="about">
+      <h2>Universitas Ma'soem - Universitas Swasta di Bandung</h2>
+      <p>Universitas Ma'soem adalah sebuah universitas swasta di Bandung yang berkomitmen menghasilkan lulusan kompeten di bidang pertanian, agribisnis, dan teknologi pangan. Kami menawarkan program pembelajaran yang kombinasi antara teori, praktik laboratorium, dan magang industri.</p>
+      <p>Program Studi Teknologi Pangan menyediakan kurikulum modern yang menekankan pada kualitas, inovasi produk, serta aplikasi teknologi untuk mendukung ketahanan pangan dan keamanan produk. Lulusan siap bersaing di pasar kerja maupun menjadi wirausahawan di sektor pangan.</p>
+      <div class="cards" style="margin-top:20px">
+        <div class="card center">
+          <div>
+            <h4 style="margin:0 0 8px">Program Unggulan</h4>
+            <ul style="padding-left:18px;margin:0;font-size:14px;color:#444">
+              <li>Magang & Kerjasama Industri</li>
+              <li>Program Studi Independen</li>
+              <li>Mentoring Start-up</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card center">
+          <div>
+            <h4 style="margin:0 0 8px">Fasilitas</h4>
+            <p style="margin:0;font-size:14px;color:#444">Laboratorium Pengolahan Pangan, Laboratorium Mikrobiologi, Ruang Riset, Perpustakaan dan Akses e-journal.</p>
+          </div>
+        </div>
+        <div class="card center">
+          <div>
+            <h4 style="margin:0 0 8px">Prospek Karir</h4>
+            <p style="margin:0;font-size:14px;color:#444">Quality Control, R&D, Production, Food Safety Officer, Konsultan Pangan, Entrepreneur.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3 class="section-title">Latest News</h3>
+      <div class="news-list">
+        <article class="news-item">
+          <img src="gambar3.jpg" alt="Kegiatan Praktikum Teknologi Pangan">
+          <div class="news-body">
+            <div class="news-title">Kegiatan Praktikum Teknologi Pangan</div>
+            <div class="news-meta">25 Oktober 2025 • Berita</div>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="gambar4.jpg" alt="Workshop Keamanan Pangan">
+          <div class="news-body">
+            <div class="news-title">Workshop Keamanan Pangan</div>
+            <div class="news-meta">11 Oktober 2025 • Event</div>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="gambar5.jpg" alt="Mahasiswa Raih Penghargaan">
+          <div class="news-body">
+            <div class="news-title">Mahasiswa Bawa Pulang Penghargaan</div>
+            <div class="news-meta">01 Oktober 2025 • Prestasi</div>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="gambar6.jpg" alt="Kerjasama Industri Baru">
+          <div class="news-body">
+            <div class="news-title">Kerjasama Industri Baru</div>
+            <div class="news-meta">28 September 2025 • Kerjasama</div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4 style="margin:0 0 8px;color:#fff">Ma'soem University</h4>
+          <div class="small">Jl. Raya Contoh No.1 Bandung • Telp: (022) 1234 5678<br>Email: info@masoem.ac.id</div>
+        </div>
+        <div>
+          <h4 style="margin:0 0 8px;color:#fff">Browse More</h4>
+          <div class="small">Tentang Kami • Fakultas • Pendaftaran • Berita • Kontak</div>
+        </div>
+        <div>
+          <h4 style="margin:0 0 8px;color:#fff">Partner</h4>
+          <div class="small">Bank BJB, Tryout.id, iB, Cisco</div>
+        </div>
+      </div>
+      <div style="margin-top:20px;text-align:center;color:#9fb0c8;font-size:13px">© 2025 Ma'soem University — All rights reserved</div>
+    </div>
+  </footer>
+</body>
+</html>
